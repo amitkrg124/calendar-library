@@ -1,0 +1,154 @@
+.App {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #333;
+}
+
+.App-header {
+    text-align: center;
+    padding: 3rem 1rem 2rem;
+    color: white;
+}
+
+.App-header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.subtitle {
+    margin: 0.5rem 0 0;
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.App-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.demo-section,
+.usage-section,
+.features-section {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.demo-section h2,
+.usage-section h2,
+.features-section h2 {
+    margin-top: 0;
+    color: #667eea;
+    font-size: 1.8rem;
+}
+
+.calendar-container {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.date-selector {
+    margin-top: 2rem;
+}
+
+.date-selector h3 {
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.date-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: center;
+}
+
+.date-button {
+    padding: 0.75rem 1.5rem;
+    background: #f7f7f7;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    color: #333;
+}
+
+.date-button:hover {
+    background: #667eea;
+    color: white;
+    border-color: #667eea;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(102, 126, 234, 0.3);
+}
+
+.date-button.active {
+    background: #667eea;
+    color: white;
+    border-color: #667eea;
+    box-shadow: 0 2px 4px rgba(102, 126, 234, 0.3);
+}
+
+.code-block {
+    background: #282c34;
+    color: #61dafb;
+    padding: 1.5rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.code-block code {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.features-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.features-list li {
+    padding: 0.75rem;
+    background: #f8f9fa;
+    border-left: 4px solid #667eea;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.App-footer {
+    text-align: center;
+    padding: 2rem;
+    color: white;
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .App-header h1 {
+        font-size: 2rem;
+    }
+
+    .demo-section,
+    .usage-section,
+    .features-section {
+        padding: 1.5rem;
+    }
+
+    .date-buttons {
+        flex-direction: column;
+    }
+
+    .date-button {
+        width: 100%;
+    }
+}
